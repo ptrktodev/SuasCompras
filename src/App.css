@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("./components/var.css");
 
 html {
   scroll-behavior: smooth;
@@ -17,7 +18,7 @@ a {
 
 * {
   user-select: none;
-  color: rgb(255, 255, 255);
+  color: var(--cor-principal);
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
@@ -36,7 +37,7 @@ ul {
 
 body {
   overflow-x: hidden;
-  background: #e3c2ff;
+  background: var(--bg-primary);
 }
 
 img {

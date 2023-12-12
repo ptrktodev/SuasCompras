@@ -1,3 +1,5 @@
+@import url("../var.css");
+
 .section {
   margin-top: 2rem;
 }
@@ -5,12 +7,12 @@
 .compras {
   display: flex;
   gap: 0.4rem;
-  padding: 0.8rem 0.8rem;
-  background-color: #210040;
+  padding: 0.8rem 1.1rem;
+  background-color: var(--bg-secundary);
   margin-top: 1rem;
   justify-content: space-between;
   align-items: center;
-  border-radius: 4px;
+  border-radius: var(--border-random);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.242);
 }
 
@@ -19,18 +21,17 @@
 }
 
 .item2 {
-  padding: 0.3rem 0rem;
   padding: 0.4rem 1rem;
   text-align: center;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--cor-principal);
   background: rgb(137, 37, 255);
   background: linear-gradient(
     132deg,
     rgba(137, 37, 255, 1) 22%,
     rgba(70, 0, 172, 1) 72%
   );
-  border-radius: 4px;
+  border-radius: var(--border-random);
 }
 
 .compras div {
@@ -39,7 +40,7 @@
 }
 
 .compras button {
-  border-radius: 4px;
+  border-radius: var(--border-random);
   background: rgb(137, 37, 255);
   background: linear-gradient(132deg, #8925ff 22%, #4600ac 72%);
   border: none;

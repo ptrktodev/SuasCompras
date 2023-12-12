@@ -1,9 +1,11 @@
+@import url("../var.css");
+
 footer {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #210040;
+  background-color: var(--bg-secundary);
   padding: 10px;
   text-align: center;
 }
@@ -26,12 +28,12 @@ footer {
 .soma p {
   padding: 0.4rem 1rem;
   text-align: center;
-  color: #ffffff;
+  color: var(--cor-principal);
   background: rgb(137, 37, 255);
   background: linear-gradient(
     132deg,
     rgba(137, 37, 255, 1) 22%,
     rgba(70, 0, 172, 1) 72%
   );
-  border-radius: 4px;
+  border-radius: var(--border-random);
 }

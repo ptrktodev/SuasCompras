@@ -5,7 +5,7 @@ import Items from "./Items";
 const Data = () => {
   const [item, setItem] = React.useState("");
   const [price, setPrice] = React.useState(0);
-  const [qntd, setQntd] = React.useState(0);
+  const [qntd, setQntd] = React.useState(1);
   const [valuesfinal, setValuesfinal] = React.useState([]);
 
   function somar() {
