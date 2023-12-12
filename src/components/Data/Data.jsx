@@ -12,7 +12,7 @@ const Data = () => {
     const soma = price * qntd;
     setItem("");
     setPrice(0);
-    setQntd(0);
+    setQntd(1);
     setTimeout(() => {
       setValuesfinal([...valuesfinal, [item, soma]]);
     }, 300);
