@@ -28,7 +28,7 @@
   border-radius: var(--border-random);
   flex: 1 1;
   border: none;
-  color: #ffffff;
+  color: var(--cor-principal);
   background-color: var(--bg-secundary);
 }
 
@@ -37,6 +37,7 @@
   cursor: pointer;
   border-radius: var(--border-random);
   border: none;
+  padding: 0 1rem;
   font-size: 0.8rem;
   color: #ffffff;
   background: rgb(137, 37, 255);
