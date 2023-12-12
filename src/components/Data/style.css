@@ -1,0 +1,37 @@
+.containerMain {
+  max-width: 950px;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.items {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.containerMain input {
+  padding: 0.8rem 0.8rem;
+  border-radius: 4px;
+  flex: 1 1;
+  border: none;
+  color: #ffffff;
+  background-color: #2e0059;
+}
+
+.btn-send {
+  height: 2.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  font-size: 0.8rem;
+  color: #ffffff;
+  background: rgb(137, 37, 255);
+  background: linear-gradient(132deg, #8925ff 22%, #4600ac 72%);
+  font-weight: 700;
+}
