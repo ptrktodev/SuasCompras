@@ -6,7 +6,7 @@ const Footer = ({ soma }) => {
     soma > 0 && (
       <footer>
         <div className="soma">
-          <span>TOTAL: </span> <p> R$ {soma}</p>
+          <span>TOTAL: </span> <p> R$ {soma.toFixed(2)}</p>
         </div>
       </footer>
     )

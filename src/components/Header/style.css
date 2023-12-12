@@ -4,11 +4,11 @@ header {
   left: 0;
   width: 100%;
   text-align: center;
-  background-color: #1f0031;
+  background-color: #210040;
 }
 
 .containerTopo {
-  background-color: #1f0031;
+  background-color: #210040;
   display: flex;
   border-radius: 4px;
   padding: 1rem 1rem;
@@ -20,4 +20,8 @@ header {
   padding: 1rem;
   max-width: 950px;
   margin: 6rem auto;
+}
+
+.containerTopo h1 {
+  color: #ffffff;
 }
