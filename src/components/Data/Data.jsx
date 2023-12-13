@@ -6,7 +6,19 @@ const Data = () => {
   const [item, setItem] = React.useState("");
   const [price, setPrice] = React.useState(0);
   const [qntd, setQntd] = React.useState(1);
-  const [valuesfinal, setValuesfinal] = React.useState([]);
+  const [valuesfinal, setValuesfinal] = React.useState(() => {
+    const storedValues = JSON.parse(localStorage.getItem("valorFinais")) || [];
+    return storedValues;
+  });
+
+  React.useEffect(() => {
+    localStorage.setItem("valorFinais", JSON.stringify(valuesfinal));
+  }, [valuesfinal]);
+
+  const limparLocalStorage = () => {
+    localStorage.removeItem("valorFinais");
+    setValuesfinal([]);
+  };
 
   function somar() {
     const soma = price * qntd;
@@ -51,7 +63,11 @@ const Data = () => {
           </button>
         ) : null}
       </div>
-      <Items valuesfinal={valuesfinal} setValuesfinal={setValuesfinal} />
+      <Items
+        valuesfinal={valuesfinal}
+        setValuesfinal={setValuesfinal}
+        deleteLocal={limparLocalStorage}
+      />
     </section>
   );
 };

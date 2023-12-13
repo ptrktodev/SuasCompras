@@ -1,14 +1,16 @@
+@import url("../var.css");
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   text-align: center;
-  background-color: #210040;
+  background-color: var(--bg-secundary);
 }
 
 .containerTopo {
-  background-color: #210040;
+  background-color: var(--bg-secundary);
   display: flex;
   border-radius: 4px;
   padding: 1rem 1rem;

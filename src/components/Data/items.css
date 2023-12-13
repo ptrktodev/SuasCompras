@@ -2,6 +2,8 @@
 
 .section {
   margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .compras {
@@ -45,4 +47,16 @@
   background: linear-gradient(132deg, #8925ff 22%, #4600ac 72%);
   border: none;
   cursor: pointer;
+}
+
+.clean {
+  cursor: pointer;
+  padding: 1.1rem 1.1rem;
+  font-weight: 700;
+  border-radius: var(--border-random);
+  background: rgb(137, 37, 255);
+  background: linear-gradient(132deg, #8925ff 22%, #4600ac 72%);
+  margin-top: 1rem;
+  border: none;
+  color: var(--cor-principal);
 }

@@ -2,7 +2,7 @@ import React from "react";
 import "./items.css";
 import Footer from "./Footer";
 
-const Items = ({ valuesfinal, setValuesfinal }) => {
+const Items = ({ valuesfinal, setValuesfinal, deleteLocal }) => {
   const somaTotal = valuesfinal.reduce((total, item) => total + item[1], 0);
 
   function toggle(index) {
@@ -39,6 +39,11 @@ const Items = ({ valuesfinal, setValuesfinal }) => {
             </div>
           </div>
         ))}
+        {somaTotal > 0 && (
+          <button className="clean" onClick={deleteLocal}>
+            Limpar Tudo
+          </button>
+        )}
       </section>
       <Footer soma={somaTotal} />
     </>
