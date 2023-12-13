@@ -38,7 +38,10 @@
   cursor: pointer;
   border-radius: var(--border-random);
   border: none;
-  padding: 0 1rem;
+  text-align: center;
+  padding: 0rem 1rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.242);
+  height: 48px;
   font-size: 0.8rem;
   color: #ffffff;
   background: rgb(137, 37, 255);

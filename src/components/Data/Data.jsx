@@ -21,13 +21,15 @@ const Data = () => {
   };
 
   function somar() {
-    const soma = price * qntd;
-    setItem("");
-    setPrice(0);
-    setQntd(1);
-    setTimeout(() => {
-      setValuesfinal([...valuesfinal, [item, soma]]);
-    }, 300);
+    if (item.length !== 0 && price !== 0) {
+      const soma = price * qntd;
+      setItem("");
+      setPrice(0);
+      setQntd(1);
+      setTimeout(() => {
+        setValuesfinal([...valuesfinal, [item, soma]]);
+      }, 300);
+    }
   }
 
   React.useEffect(() => {
@@ -57,11 +59,9 @@ const Data = () => {
             onChange={(ev) => setQntd(ev.target.value)}
           />
         </div>
-        {item.length !== 0 && price !== 0 && qntd !== 0 ? (
-          <button onClick={somar} className="btn-send">
-            Adicionar
-          </button>
-        ) : null}
+        <button onClick={somar} className="btn-send">
+          <span>Adicionar</span>
+        </button>
       </div>
       <Items
         valuesfinal={valuesfinal}
