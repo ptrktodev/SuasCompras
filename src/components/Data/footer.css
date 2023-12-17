@@ -8,6 +8,8 @@ footer {
   background-color: var(--bg-secundary);
   padding: 10px;
   text-align: center;
+  transform: translateY(300px);
+  opacity: 0;
 }
 
 .soma {
